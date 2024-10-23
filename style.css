@@ -28,6 +28,9 @@
   display: flex;
 }
 
+.text-center {
+  text-align: center;
+}
 .d-none {
   display: none;
 }
@@ -222,6 +225,60 @@ main p {
   border: none;
   margin: 15px 0;
 }
+
+/* BMI calculator section  */
+.bmi-calculator {
+  background: rgb(34, 34, 34);
+  padding: 30px 0;
+}
+
+.second-heading {
+  font-size: 1.8rem;
+  color: #fff;
+}
+table,
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+thead {
+  color: #fff;
+}
+td,
+tr,
+th {
+  padding: 10px;
+}
+tbody {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* form */
+.bmi-form {
+  /* justify-content: space-around; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 20px 30px;
+}
+.bmi-input button {
+  margin-left: 10px;
+}
+.form-content {
+  margin: 15px 0;
+}
+.bmi-result table {
+  margin-top: 15px;
+}
+.form-content input,
+select {
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border: none;
+  margin: 7px;
+  color: rgba(255, 255, 255, 0.6);
+}
 /* =========== Main End ========= */
 
 /* ==========responsive start ========== */
@@ -267,6 +324,10 @@ main p {
     flex-direction: column;
     height: auto;
   }
+
+  .bmi-form {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 976px) and (min-width: 576px) {
@@ -296,8 +357,16 @@ main p {
     top: 30%;
   }
   /* habit part */
+  .run {
+    flex-direction: column;
+    height: auto;
+  }
   .cards {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .bmi-form {
+    grid-template-columns: 1fr;
   }
 }
 /* ==========responsive end ========== */
