@@ -279,6 +279,22 @@ select {
   margin: 7px;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.services {
+  padding: 30px 0;
+  text-align: center;
+}
+.card .icon {
+  font-size: 35px;
+  color: red;
+}
+.cards {
+  margin-top: 25px;
+}
+.service {
+  border: 1px dashed red;
+  padding: 10px;
+}
 /* =========== Main End ========= */
 
 /* ==========responsive start ========== */
