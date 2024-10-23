@@ -1,0 +1,303 @@
+/* fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*======== utilities selector======== */
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+img {
+  width: 100%;
+}
+/* =========header part start ========== */
+header {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+.menu {
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: rgb(230, 83, 60);
+  font-size: 2.1rem;
+  font-weight: 800;
+  font-style: italic;
+}
+.links .link {
+  list-style: none;
+}
+
+.link a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background: rgb(230, 83, 60);
+  margin-right: 15px;
+}
+
+/* banner */
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2.8rem;
+}
+.banner-text h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #fff;
+}
+.banner-text h1 > span {
+  font-weight: 100;
+  font-style: italic;
+}
+.banner-text p {
+  margin: 15px 0;
+}
+.banner-text button {
+  cursor: pointer;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 42px;
+  border: none;
+  background: rgb(230, 83, 60);
+  margin-right: 15px;
+}
+.banner-img {
+  position: relative;
+  /* display: flex; */
+  /* flex-shrink: 1;  */
+  width: 353px;
+  height: 588px;
+  background: url(./images/Images\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card1,
+.card2 {
+  position: absolute;
+  height: 6.5rem;
+  width: 9.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.card1 .circle {
+  height: 25px;
+  width: 25px;
+  background: tomato;
+  border-radius: 50%;
+}
+.card1 h3,
+.card2 h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.card1 p,
+.card2 p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+.card1 {
+  top: 65%;
+  /* background: black; */
+  left: -3.2rem;
+  align-items: center;
+  gap: 5px;
+}
+.card2 {
+  top: 20%;
+  right: -3rem;
+  /* background: black; */
+}
+.hambuger a {
+  color: #fff;
+}
+/* =========header part end ============ */
+
+/* =========== Main start ========= */
+main {
+  background: #000;
+}
+main p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* habits section */
+.habit-text-content {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.heading {
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  text-align: center;
+}
+.card h3 {
+  color: #fff;
+  padding: 10px 0;
+}
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* running section */
+.run {
+  height: 340px;
+  display: flex;
+  background: rgb(34, 34, 34);
+  padding: 15px 25px;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 150px; */
+  margin: 40px 0;
+  border-radius: 15px;
+}
+.run-text {
+  margin-right: 150px;
+}
+.heading {
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.run-img img {
+  width: 260;
+  height: 250px;
+  border-radius: 15px;
+}
+.btn {
+  background: rgb(230, 83, 60);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  margin: 15px 0;
+}
+/* =========== Main End ========= */
+
+/* ==========responsive start ========== */
+@media (max-width: 576px) {
+  .links-container {
+    display: none;
+  }
+
+  .hambuger {
+    display: block;
+    /* color: #fff; */
+  }
+  .banner {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
+  .card1,
+  .card2 {
+    height: 5rem;
+    width: 8.5rem;
+  }
+  .card1 h3,
+  .card2 h3 {
+    font-size: 1.5rem;
+  }
+  .card1 {
+    left: 10px;
+  }
+
+  .card2 {
+    right: 10px;
+    top: 30%;
+  }
+
+  /* habit part */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .run {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width: 976px) and (min-width: 576px) {
+  .banner {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    align-items: center;
+  }
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
+  .card1,
+  .card2 {
+    height: 5rem;
+    width: 8.5rem;
+  }
+  .card1 h3,
+  .card2 h3 {
+    font-size: 1.5rem;
+  }
+  .card1 {
+    left: 10px;
+  }
+
+  .card2 {
+    right: 10px;
+    top: 30%;
+  }
+  /* habit part */
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* ==========responsive end ========== */
