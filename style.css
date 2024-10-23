@@ -295,6 +295,52 @@ select {
   border: 1px dashed red;
   padding: 10px;
 }
+
+/* team section */
+.team {
+  text-align: center;
+}
+.members {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.member {
+  height: 250px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.member1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/trainer1.png") no-repeat top/cover;
+}
+.member2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/trainer2.png") no-repeat top/cover;
+}
+.member3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/trainer3.png") no-repeat top/cover;
+}
+.member4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/trainer4.png") no-repeat top/cover;
+}
+.member5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/trainer5.png") no-repeat top/cover;
+}
+.member6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/trainer6.png") no-repeat top/cover;
+}
 /* =========== Main End ========= */
 
 /* ==========responsive start ========== */
@@ -344,6 +390,10 @@ select {
   .bmi-form {
     grid-template-columns: 1fr;
   }
+
+  .members {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 976px) and (min-width: 576px) {
@@ -383,6 +433,10 @@ select {
 
   .bmi-form {
     grid-template-columns: 1fr;
+  }
+
+  .members {
+    grid-template-columns: 1fr 1fr;
   }
 }
 /* ==========responsive end ========== */
