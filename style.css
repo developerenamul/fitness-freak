@@ -21,7 +21,8 @@
 .container {
   max-width: 80%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .d-flex {
@@ -343,6 +344,40 @@ select {
 }
 /* =========== Main End ========= */
 
+/* ==========footer Start========== */
+footer {
+  background: rgb(34, 34, 34);
+}
+footer p,
+.contact li a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact {
+  color: #fff;
+  list-style: none;
+}
+.contact li a {
+  text-decoration: none;
+}
+.footer-content {
+  padding-bottom: 15px;
+}
+.footer-content,
+.footer-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.contact li {
+  margin: 10px 0;
+}
+.copy-right {
+  margin-top: 20px;
+  text-align: center;
+}
+/* ==========footer end========== */
+
 /* ==========responsive start ========== */
 @media (max-width: 576px) {
   .links-container {
@@ -374,10 +409,12 @@ select {
   }
 
   .card2 {
-    right: 10px;
+    right: 52px;
     top: 30%;
   }
-
+  .run-text {
+    margin-right: 0;
+  }
   /* habit part */
   .cards {
     grid-template-columns: 1fr;
@@ -393,6 +430,18 @@ select {
 
   .members {
     grid-template-columns: 1fr;
+  }
+
+  .container {
+    margin: auto;
+  }
+
+  /* footer part */
+  .footer-content,
+  .footer-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
@@ -437,6 +486,10 @@ select {
 
   .members {
     grid-template-columns: 1fr 1fr;
+  }
+  /* footer part */
+  .footer-content {
+    grid-template-columns: 1fr;
   }
 }
 /* ==========responsive end ========== */
